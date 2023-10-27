@@ -1,0 +1,27 @@
+const App = () => {
+  const course = 'Half Stack application development'
+  const parts = [
+    {
+      name: 'Fundamentals of React',
+      exercises: 10
+    },
+    {
+      name: 'Using props to pass data',
+      exercises: 7
+    },
+    {
+      name: 'State of a component',
+      exercises: 14
+    }
+  ]
+
+  return (
+    <div>
+      <h2>{course} </h2>
+      <h2>Course Name: {parts[0].name} <br></br>No. of exercises:{parts[0].exercises}</h2>
+      <h2>Course Name: {parts[1].name} <br></br>No. of exercises:{parts[1].exercises} </h2>
+      <h2>Course Name: {parts[2].name} <br></br>No. of exercises:{parts[2].exercises} </h2>
+    </div>
+  )
+}
+export default App
